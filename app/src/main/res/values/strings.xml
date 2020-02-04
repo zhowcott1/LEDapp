@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LED Blinds</string>
+    <string name="refresh">Refresh</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="color">Color</string>
+    <string name="RBG_values">Red: %1$d, Green: %2$d, Blue: %3$d</string>
+    <string name="seeking_to">Seeking to : %1$d</string>
+    <string name="started_at">Started at : %1$s</string>
+    <string name="selected">Selected : %1$d</string>
+
+</resources>

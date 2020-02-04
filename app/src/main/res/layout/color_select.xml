@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="RED"
+            android:gravity="center_horizontal"
+            android:textColor="#FF0000"/>
+    <SeekBar
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:max="255"
+            android:progress="3"
+            android:progressBackgroundTint="#FF0000"
+            android:id="@+id/seekBarR" tools:layout_editor_absoluteY="445dp"
+            tools:layout_editor_absoluteX="80dp"/>
+
+    <TextView
+            android:textSize="24sp"
+            android:gravity="center_horizontal"
+            android:id="@+id/redProg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:padding="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/seekBarR"/>
+
+    <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="GREEN"
+            android:gravity="center_horizontal"
+            android:textColor="#5BFF33"
+            app:layout_constraintTop_toBottomOf="@+id/redProg"/>
+
+    <SeekBar
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:progress="3"
+            android:progressBackgroundTint="#5BFF33"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/redProg"
+            android:id="@+id/seekBarG" tools:layout_editor_absoluteY="597dp"
+            tools:layout_editor_absoluteX="80dp"/>
+    <TextView
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/seekBarG"
+            android:gravity="center_horizontal"
+            android:id="@+id/greenProg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:padding="20dp"/>
+    <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="BLUE"
+            android:gravity="center_horizontal"
+            android:textColor="#0000FF"
+            app:layout_constraintTop_toBottomOf="@+id/greenProg"/>
+    <SeekBar
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:progress="3"
+            android:progressBackgroundTint="#0000FF"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/greenProg"
+            android:id="@+id/seekBarB" tools:layout_editor_absoluteY="516dp"
+            tools:layout_editor_absoluteX="80dp"/>
+    <TextView
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/seekBarB"
+            android:gravity="center_horizontal"
+            android:id="@+id/blueProg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:padding="20dp"/>
+    <TextView
+            android:id="@+id/seekbarStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- -"
+            android:padding="20dp"/>
+    <Button
+            android:id="@+id/set_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Color"
+            android:textSize="30sp"
+
+
+    />
+
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>
